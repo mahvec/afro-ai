@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="w-screen font-exo bg-black text-[#67e8bc] z-50 fixed uppercase">
         <nav className="container mx-auto border-gray-200 p-3">
           <div className="container mx-auto flex flex-wrap items-center justify-between ">
-            <a href="#" className="flex font-orbitron gap-2">
+            <Link to="/" className="flex font-orbitron gap-2">
               <img
                 src="https://www.afrocentricai.org/_next/static/media/logo.4ce121e8.png"
                 alt="Afro ai"
@@ -14,11 +14,11 @@ export default function Navbar() {
               <span className="self-center uppercase text-lg font-semibold whitespace-nowrap">
                 afro a.i
               </span>
-            </a>
+            </Link>
 
             <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
               <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
-                <Link to={"/"}>About</Link>
+                <Link to={"/about"}>About</Link>
                 <li className="relative group uppercase">
                   <button
                     id=""

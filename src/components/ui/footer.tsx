@@ -10,8 +10,7 @@ export default function Footer() {
               alt="logo"
             />
             <p className="max-w-xs mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-              accusantium.
+            AFRO AI: <span className="text-[#67e8bc]">Promoting the Spirit of Ubuntu.</span>
             </p>
             <div className="flex mt-8 space-x-6">
               <a
