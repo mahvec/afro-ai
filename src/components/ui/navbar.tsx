@@ -5,7 +5,7 @@ export default function Navbar() {
     <div>
       <div className="w-screen font-exo bg-black text-[#67e8bc] z-50 fixed uppercase">
         <nav className="container mx-auto border-gray-200 p-3">
-          <div className="container mx-auto flex flex-wrap items-center justify-between ">
+          <div className=" flex flex-wrap items-center justify-between ">
             <Link to="/" className="flex font-orbitron gap-2">
               <img
                 src="https://www.afrocentricai.org/_next/static/media/logo.4ce121e8.png"

@@ -1,4 +1,5 @@
-import { ImagesSlider } from "C:/afro ai webstie/afro-ai/src/domain/homepage/components/image_slider.tsx";
+
+import { ImagesSlider } from "@/domain/homepage/components/image_slider";
 import { motion } from "framer-motion";
 
 export default function Hero() {
