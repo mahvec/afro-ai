@@ -115,9 +115,9 @@ export default function Footer() {
             <div>
               <p className="font-medium">Company</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href="">
+                <a className="hover:opacity-75" href="/about">
                   {" "}
-                  About{" "}
+                  About{""}
                 </a>
                 <a className="hover:opacity-75" href="">
                   {" "}
@@ -125,7 +125,7 @@ export default function Footer() {
                 </a>
                 <a className="hover:opacity-75" href="">
                   {" "}
-                  History{" "}
+                  Roadmap{" "}
                 </a>
                 <a className="hover:opacity-75" href="">
                   {" "}
@@ -136,26 +136,26 @@ export default function Footer() {
             <div>
               <p className="font-medium">Services</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href="">
+                <a className="hover:opacity-75" href="/afroai">
                   {" "}
-                  1on1 Coaching{" "}
+                  AI Assitant (Afro){" "}
                 </a>
-                <a className="hover:opacity-75" href="">
+                <a className="hover:opacity-75" href="/campusgenie">
                   {" "}
-                  Company Review{" "}
+                  Campus Genie{" "}
                 </a>
-                <a className="hover:opacity-75" href="">
+                <a className="hover:opacity-75" href="/wisenurse">
                   {" "}
-                  Accounts Review{" "}
+                  Wise Nurse{" "}
                 </a>
-                <a className="hover:opacity-75" href="">
+                {/* <a className="hover:opacity-75" href="">
                   {" "}
                   HR Consulting{" "}
                 </a>
                 <a className="hover:opacity-75" href="">
                   {" "}
                   SEO Optimisation{" "}
-                </a>
+                </a> */}
               </nav>
             </div>
             <div>
@@ -165,7 +165,7 @@ export default function Footer() {
                   {" "}
                   Contact{" "}
                 </a>
-                <a className="hover:opacity-75" href="">
+                <a className="hover:opacity-75" href="/faq">
                   {" "}
                   FAQs{" "}
                 </a>
@@ -198,7 +198,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-8 text-xs text-gray-800">© 2022 Comany Name</p>
+        <p className="mt-8 text-xs text-[#67e8bc]">
+          © {new Date(new Date().toLocaleString("en-US", { timeZone: "Africa/Lagos" })).getFullYear()} Blathium Technology
+          </p>
       </div>
     </footer>
   );

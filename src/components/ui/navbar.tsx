@@ -46,7 +46,7 @@ export default function Navbar() {
                   >
                     <li>
                       <Link
-                        to={""}
+                        to={"/afroai"}
                         className="block px-4 py-2 hover:bg-[#67e8bc] hover:text-black"
                       >
                         Afro ai
@@ -54,7 +54,7 @@ export default function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to={""}
+                        to={"/campusgenie"}
                         className="block px-4 py-2 hover:bg-[#67e8bc] hover:text-black"
                       >
                         Campus genie
@@ -62,7 +62,7 @@ export default function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to={""}
+                        to={"/wisenurse"}
                         className="block px-4 py-2 hover:bg-[#67e8bc] hover:text-black"
                       >
                         Wise nurse
@@ -71,7 +71,7 @@ export default function Navbar() {
                   </ul>
                 </li>
                 <Link to={"/"}>Resources</Link>
-                <Link to={"/"}>Contact</Link>
+                <Link to={"/contact"}>Contact</Link>
                 <Link to={"/"}>Community</Link>
               </ul>
             </div>
