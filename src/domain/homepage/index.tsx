@@ -1,3 +1,5 @@
+import ContactUs from "./components/contact-us";
+import Faq from "./components/faq";
 import Hero from "./components/hero";
 import Products from "./components/products";
 import Trusted from "./components/trusted";
@@ -10,6 +12,8 @@ export default function Homepage() {
       <Trusted />
       <Products />
       <WhyChooseUs />
+      <ContactUs />
+      <Faq />
     </div>
   );
 }
