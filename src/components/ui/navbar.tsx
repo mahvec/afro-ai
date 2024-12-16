@@ -78,12 +78,12 @@ export default function Navbar() {
                 <Link to={"/"}>Community</Link>
               </ul>
 
-              <Link
-                to={"/"}
+              <a
+                href={"http://www.afrocentricai.org/login"}
                 className="p-3 rounded bg-[#67e8bc] text-black uppercase font-semibold hover:bg-black hover:border border-[#67e8bc]  hover:text-[#67e8bc] transition-all duration-700 ease-in-out"
               >
                 Get Started
-              </Link>
+              </a>
             </div>
           </div>
         </nav>
