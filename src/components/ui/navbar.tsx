@@ -4,8 +4,8 @@ export default function Navbar() {
   return (
     <div>
       <div className="w-screen font-exo bg-black text-[#67e8bc] z-50 fixed uppercase">
-        <nav className="container mx-auto border-gray-200 p-3">
-          <div className="container mx-auto flex flex-wrap items-center justify-between ">
+        <nav className="container mx-auto border-gray-200 p-5">
+          <div className=" flex flex-wrap items-center justify-between ">
             <Link to="/" className="flex font-orbitron gap-2">
               <img
                 src="https://www.afrocentricai.org/_next/static/media/logo.4ce121e8.png"
@@ -16,7 +16,10 @@ export default function Navbar() {
               </span>
             </Link>
 
-            <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
+            <div
+              className="hidden w-full md:w-auto md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 items-center"
+              id="mobile-menu"
+            >
               <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                 <Link to={"/about"}>About</Link>
                 <li className="relative group uppercase">
@@ -74,6 +77,13 @@ export default function Navbar() {
                 <Link to={"/contact"}>Contact</Link>
                 <Link to={"/"}>Community</Link>
               </ul>
+
+              <a
+                href={"http://www.afrocentricai.org/login"}
+                className="p-3 rounded bg-[#67e8bc] text-black uppercase font-semibold hover:bg-black hover:border border-[#67e8bc]  hover:text-[#67e8bc] transition-all duration-700 ease-in-out"
+              >
+                Get Started
+              </a>
             </div>
           </div>
         </nav>
