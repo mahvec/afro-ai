@@ -1,38 +1,50 @@
 export const accordion = [
   {
     id: 0,
-    name: "How do I search for jobs on Abuja Recruiters?",
+    name: "What languages does Afro AI support?",
     content:
-      "You can search for jobs by using the search bar on our homepage. Enter relevant keywords, job titles, or company names. You can also filter results by location, industry, and job type.",
+      "We support major African languages including Swahili, Yoruba, Zulu, Amharic, and more.",
   },
   {
     id: 1,
-    name: "How can I apply for a job through Abuja Recruiters?",
+    name: "How accurate is Afro AI's information?",
     content:
-      "Once you find a job that matches your skills and interests, click on the job listing to view details. If you wish to apply, click the ('Apply Now') button and follow the prompts to submit your application.",
+      "Afro AI uses premium ChatGPT 4 AI models and is constantly updated by Open AI and Anthropic, the owners of the premium models. However, always verify critical information from official sources.",
   },
   {
     id: 2,
-    name: "Is there a fee for using Abuja Recruiters' services?",
+    name: "Can Afro AI help with my homework?",
     content:
-      "To unsubscribe from email notifications, log in to your account, go to the notification settings, and adjust your preferences. You can also click the 'Unsubscribe' link at the bottom of any email you receive from us.",
+      "Yes! Afro AI can explain concepts and guide you through problems. Remember, the goal is to learn, not just get answers.",
   },
   {
     id: 3,
-    name: "How can I contact Abuja Recruiters for support?",
+    name: "Is my data safe with Afro AI?",
     content:
-      "For any inquiries or support, you can contact us via email at support@abujarecruiters.com or call us at +234 123 456 7890. Our customer service team is available Monday to Friday, 9 AM to 5 PM.",
+      "We prioritize your privacy. We don't store personal conversations or sell your data.",
   },
   {
     id: 4,
-    name: "Can I get career advice from Abuja Recruiters?",
+    name: "How much does Afro AI cost?",
     content:
-      "Yes, we offer career advice and resources to help you with your job search. Check out our blog and resources section for tips on resume writing, interview preparation, and more.",
+      "We offer flexible pricing plans. Check our pricing page for details.",
   },
   {
     id: 5,
-    name: "How do I unsubscribe from email notifications?",
+    name: "Can I use Afro AI offline?",
     content:
-      'To unsubscribe from email notifications, log in to your account, go to the notification settings, and adjust your preferences. You can also click the "Unsubscribe" link at the bottom of any email you receive from us.',
+      "Currently, Afro AI requires an internet connection. We are working on solutions for low-connectivity areas.",
+  },
+  {
+    id: 6,
+    name: "How is Afro AI different from other AI assistants?",
+    content:
+      "Afro AI brings the premium models of ChatGPT to your fingertips at an affordable price, which would otherwise cost $20 (around N27,000–N30,000). Therefore, you are using the same premium model (ChatGPT 4 or 4o) as other top-tier assistants.",
+  },
+  {
+    id: 7,
+    name: "Can I contribute to improving Afro AI?",
+    content:
+      "Absolutely! Your usage and feedback help us improve the user experience and train the premium models to better understand African culture, promoting tailored responses for African users.",
   },
 ];

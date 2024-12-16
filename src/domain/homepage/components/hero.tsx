@@ -18,24 +18,22 @@ export default function Hero() {
         transition={{
           duration: 0.6,
         }}
-        className="z-50 flex flex-col justify-center items-center"
+        className="z-50 flex flex-col"
       >
-        <main className="container mx-auto p-3 lg:p-0">
-          <div className="w-full flex flex-col items-start justify-start">
-            <motion.p className="text-2xl lg:text-[40px] text-[#67e8bc] uppercase md:w-[50%] font-bold">
+        <main className="  w-full p-3 lg:p-0">
+          <div className="container mx-auto flex flex-col items-start justify-start lg:space-y-8">
+            <motion.p className="text-2xl md:text-3xl lg:text-[40px] text-[#67e8bc] uppercase md:w-[50%] font-bold">
               Unlock AI Power Tailored for Africa
             </motion.p>
-            <motion.p className="text-[#67e8bc] text-xs">
+            <motion.p className="text-[#67e8bc]  md:text-xl">
               Access premium AI tools like ChatGPT 4 in local currencies. Boost
               your learning and productivity.
             </motion.p>
-            <motion.p className="text-[#67e8bc] flex flex-col mt-20 text-sm">
+            <motion.p className="text-[#67e8bc] flex flex-col mt-20  md:text-xl">
               <span className=" uppercase">Our Offerings</span>
-              <span className="underline">
-                Affordable access to top AI models
-              </span>
+              <span className="">Affordable access to top AI models</span>
             </motion.p>
-            <div className="md:w-[40%] pl-5 text-xs mt-2 space-y-2">
+            <div className="md:w-[60%] lg:w-[40%] pl-5 text-sm md:text-lg mt-2 space-y-2">
               <motion.p className="text-[#67e8bc] flex">
                 <span>●</span>
                 <span>
@@ -53,6 +51,16 @@ export default function Hero() {
                 </span>
               </motion.p>
             </div>
+            <motion.p className="">
+              <div className="flex justify-center mt-10 ">
+                <a
+                  href="http://www.afrocentricai.org/login"
+                  className=" py-3 bg-[#67e8bc] text-[#1a1a2e] font-bold px-10"
+                >
+                  Get started
+                </a>
+              </div>
+            </motion.p>
           </div>
         </main>
       </motion.div>

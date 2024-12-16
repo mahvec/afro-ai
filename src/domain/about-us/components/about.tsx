@@ -1,7 +1,7 @@
 export default function AboutTwo() {
   return (
     <div className="w-full py-10 bg-black">
-      <div className="container mx-auto  text-white space-y-8 md:text-2xl text-center my-10">
+      <div className="container mx-auto text-lg md:text-2xl  text-white space-y-8 p-3 text-center my-10">
         <p className="w-full md:w-1/2 mx-auto">
           Together, we're not just accessing AI; we're unleashing Africa's
           potential, one mind at a time.

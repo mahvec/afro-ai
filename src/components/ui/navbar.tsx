@@ -1,6 +1,14 @@
+import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { CiSearch } from "react-icons/ci";
+import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [nav, setNav] = useState(true);
+
+  const handleNav = () => setNav(!nav);
+
   return (
     <div>
       <div className="w-screen font-exo bg-black text-[#67e8bc] z-50 fixed uppercase">
@@ -22,60 +30,8 @@ export default function Navbar() {
             >
               <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                 <Link to={"/about"}>About</Link>
-                <li className="relative group uppercase">
-                  <button
-                    id=""
-                    data-dropdown-toggle=""
-                    className="flex items-center uppercase justify-between w-full md:w-auto"
-                  >
-                    Product
-                    <svg
-                      className="w-4 h-4 ml-1"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-
-                  <ul
-                    id="dropdownNavbar"
-                    className="absolute top-1 hidden group-hover:block bg-black text-[#67e8bc] list-none group-hover:transition-all duration-700 ease-in-out divide-y divide-gray-100 rounded shadow my-4 w-44 z-10"
-                  >
-                    <li>
-                      <Link
-                        to={"/afroai"}
-                        className="block px-4 py-2 hover:bg-[#67e8bc] hover:text-black"
-                      >
-                        Afro ai
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={"/campusgenie"}
-                        className="block px-4 py-2 hover:bg-[#67e8bc] hover:text-black"
-                      >
-                        Campus genie
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={"/wisenurse"}
-                        className="block px-4 py-2 hover:bg-[#67e8bc] hover:text-black"
-                      >
-                        Wise nurse
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <Link to={"/"}>Resources</Link>
-                <Link to={"/contact"}>Contact</Link>
-                <Link to={"/"}>Community</Link>
+                <Link to={"/"}>Products</Link>
+                <Link to={"/community"}>Community</Link>
               </ul>
 
               <a
@@ -87,6 +43,74 @@ export default function Navbar() {
             </div>
           </div>
         </nav>
+
+        {/* Mobile view nav bar */}
+
+        <div className="bg-black fixed w-screen top-0 mx-auto py-3 px-5 z-[100] lg:hidden block ">
+          <div className="bg-black flex items-center justify-between z-[100]">
+            <Link to="/" className="flex items-center gap-2">
+              <img
+                src="https://www.afrocentricai.org/_next/static/media/logo.4ce121e8.png"
+                alt="Afro ai"
+              />
+              <span className="self-center uppercase text-lg font-semibold whitespace-nowrap">
+                afro a.i
+              </span>
+            </Link>
+
+            <div className="flex gap-1 items-center">
+              {/* <p className="text-gray-500">
+                <CiSearch size={30} />
+              </p> */}
+              <div
+                onClick={handleNav}
+                className="text-[#67e8bc] block lg:hidden"
+              >
+                {!nav ? <AiOutlineClose size={30} /> : <TiThMenu size={30} />}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className={
+            !nav
+              ? "fixed left-0 top-[60px] h-screen w-[100vw] mx-auto flex flex-col gap-5 z-50 bg-black px-10  pt-20 ease-in-out duration-700"
+              : "fixed top-[-200%]  w-[100vw] ease-in-out duration-700 mx-auto flex flex-col"
+          }
+        >
+          {/* {NavbarArray.map((navbar, id) => (
+          <div key={id} className="p-3 font-medium w-fit self-center">
+            <Link
+              to={navbar.to}
+              className="hover:text-[#00B140] link link-underline link-underline-black"
+            >
+              {navbar.name}
+            </Link>
+          </div>
+        ))}
+        <div className="flex flex-col  text-white gap-2 mt-10 font-medium">
+          <button className="bg-[#00b140] py-3 rounded">Login</button>
+          <button className="bg-[#F9A825] py-3 rounded">Register</button>
+        </div> */}
+
+          <div
+            className="lg:hidden w-full flex flex-col  space-y-8 mt-4 md:mt-0 items-center"
+            id="mobile-menu"
+          >
+            <ul className="flex-col  flex space-y-4 mt-4 text-center">
+              <Link to={"/about"}>About</Link>
+              <Link to={"/"}>Products</Link>
+              <Link to={"/community"}>Community</Link>
+            </ul>
+
+            <a
+              href={"http://www.afrocentricai.org/login"}
+              className="p-3 rounded bg-[#67e8bc] text-black uppercase font-semibold hover:bg-black hover:border border-[#67e8bc]  hover:text-[#67e8bc] transition-all duration-700 ease-in-out"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
       </div>
 
       <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
