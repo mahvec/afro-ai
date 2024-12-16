@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AboutAfro() {
   return (
     <div className="w-full h-full bg-black">

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { CiSearch } from "react-icons/ci";
 import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-router-dom";
 

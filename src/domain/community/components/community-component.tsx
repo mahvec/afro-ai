@@ -1,4 +1,4 @@
-import { Users, HelpCircle, BookOpen, MessageCircle } from "lucide-react";
+import { Users, HelpCircle, BookOpen } from "lucide-react";
 
 const Section = ({
   title,
